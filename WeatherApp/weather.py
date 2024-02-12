@@ -1,6 +1,4 @@
 import requests
-from win10toast_click import ToastNotifier
-from plyer import notification
 
 
 class WeatherData:
