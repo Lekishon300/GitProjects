@@ -1,0 +1,51 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9eff4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.weather-card {
+  background-color: #99b9c6;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+  margin: auto;
+
+  @media (max-width: 600px) { 
+    width: 100%;
+    border-radius: 0;
+    height: 100vh; 
+    box-shadow: none;
+    padding: 0;
+}
+}
+.weather-icon {
+  margin-bottom: 20px;
+}
+/* Media query for smaller screens */
+@media (max-width: 600px) { 
+  .weather-icon {
+      margin-bottom: 40px;
+      margin-top: 90px;
+  }
+}
+.weather-info {
+padding-top: 0px;
+}
+.weather-info .temperature {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.weather-info .condition,
+.weather-info .description {
+  font-size: 24px;
+  color: #555;
+}

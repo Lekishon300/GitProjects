@@ -1,0 +1,158 @@
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Base styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  overflow-x: hidden; 
+  overflow-y: hidden;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100vw;
+  padding: 0; 
+  margin: 0; 
+}
+
+.login-form {
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  width: 100%; 
+  height: 100vh; 
+  border-radius: 0; 
+  box-shadow: none; 
+  box-sizing: border-box; 
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  
+}
+
+.login-form h1 {
+  font-size: 2.5rem; 
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.remember-me {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+.remember-me label {
+  font-size: 0.9rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+.links a {
+  display: block;
+  margin: 1rem 0;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+@media (max-width: 768px) {
+  .login-container {
+    padding: 10px; 
+  }
+
+  .login-form {
+    padding: 30px; 
+    max-width: 350px; 
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); 
+    height: auto; 
+  }
+
+  .login-form h1 {
+    font-size: 2.5rem; 
+  }
+
+  .input-group input, .login-btn {
+    padding: 12px; 
+  }
+
+  .login-btn {
+    font-size: 1rem; 
+  }
+
+  .remember-me label, .links a {
+    font-size: 0.8rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form h1 {
+    font-size: 1.75rem; 
+  }
+
+  .login-form {
+    padding: 15px; 
+  }
+
+  .input-group input {
+    padding: 10px; 
+  }
+
+  .remember-me label {
+    font-size: 0.75rem; 
+  }
+
+  .login-btn {
+    font-size: 0.9rem; 
+  }
+
+  .links a {
+    font-size: 0.75rem; 
+  }
+}

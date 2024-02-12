@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Display</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='weather_display.css') }}">
+</head>
+<body>
+
+<div class="weather-card">
+  <div class="weather-icon">
+    <img src="https://openweathermap.org/img/wn/{{ weather.icon }}@2x.png" alt="Weather Icon">
+  </div>
+  <div class="weather-info">
+        <div class="temperature">{{ weather.temperature }}°C</div> 
+        <div class="condition">{{ weather.main }}</div>
+        <div class="description">{{ weather.description }}</div>
+  </div>
+</div>
+</body>
+</html>
