@@ -14,48 +14,18 @@ The application does the following:
 * [✓] Real-time weather display
 * [✓] Weather icons to visually represent current conditions.
 
+## App demo
+
 ## File Structure
 * 'result.py': Main Flask application script with route definitions.
 * 'weather.py': Python class for OpenWeather API interaction.
 * 'login.html', 'dashboard.html', 'weather_display.html': HTML pages for the respective app sections.
 * 'login.css', 'dashboard.css', 'weather_display.css': Styling for the HTML pages.
-  
-## App Screenshots
-Here's are screenshots of implemented features:(each screenshot has description on top)
 
-Note the initial product quantity for product id 8 and 10, 8 is 300 while 10 is 85
-
-<img src='screenshots/Screenshot (249).png' title='Video Walkthrough' width='400' height='300' alt='Video Walkthrough' />
-
-Sucessful login - check sql/query.sql file for customer Jessica Jones credentials, customer id is 6
-
-<img src='screenshots/Screenshot (250).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
-
-Jessica adds first item to order -  product 8 and orders 10 of them
-
-<img src='screenshots/Screenshot (251).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
-
-Jessica adds second item to order -  product 10 and orders 15 of them
-
-<img src='screenshots/Screenshot (252).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
-
-Jessica ends order and gets total order cost
-
-<img src='screenshots\Screenshot (253).png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-On the order table, an order is created saving Jessica's total amount = 4349.75 and noting her customer id=6
-
-<img src='screenshots/Screenshot (254).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
-
-For each of the items ordered, they are added to the items table with respective ids and quantity(10 of product id 8, 15 of product id 10), order id from previous table is also saved (order id 9)
-
-<img src='screenshots/Screenshot (255).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
-
-The stock level of each product is updated, initially product id 8 was 300, Jessica bought 10, so now the stock is at 290
-
-Similarly product id 10 was 85, Jessica bought 15, so now the stock is at 70
-
-<img src='screenshots/Screenshot (256).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+## Setup
+* Obtain an API key from <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">OpenWeather</a> Obtain an API key
+* Install dependencies: Flask.
+* Run 'result.py' to start the server.
 
 ## Database ER Diagram
 
