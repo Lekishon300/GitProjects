@@ -13,6 +13,12 @@ The application does the following:
 * [✓] Error handling for incorrect API keys or unavailable weather data.
 * [✓] Real-time weather display
 * [✓] Weather icons to visually represent current conditions.
+
+## File Structure
+* 'result.py': Main Flask application script with route definitions.
+* 'weather.py': Python class for OpenWeather API interaction.
+* 'login.html', 'dashboard.html', 'weather_display.html': HTML pages for the respective app sections.
+* 'login.css', 'dashboard.css', 'weather_display.css': Styling for the HTML pages.
   
 ## App Screenshots
 Here's are screenshots of implemented features:(each screenshot has description on top)
