@@ -32,8 +32,3 @@ The application does the following:
 * Obtain an API key from <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">OpenWeather</a> Obtain an API key
 * Install dependencies: Flask.
 * Run 'result.py' to start the server.
-
-## Dependencies
-* <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">Java Development Kit (JDK)</a>: Required to compile and run the Java application.
-* <a href="https://www.oracle.com/mysql/what-is-mysql/" target="_blank">MySQL Database</a>: Utilized for storing and managing customer, product, and order data.
-* <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/" target="_blank">JDBC</a>: Java Database Connectivity for database interactions.
